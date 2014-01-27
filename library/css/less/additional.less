@@ -1,7 +1,124 @@
-.logo {
+@box-height: 80px;
+@box-color1:#f8bf72;
+@box-color2:#fd6480;
+@box-color3:#1A80BE; //#07408D; //#69c4cc;
+@box-color4:#08C7B4; //#029B7F;//#65d997;
+@box-color5:#5CB85C;
+
+.first {
+  height: @box-height;
+  line-height: @box-height;
+  background-color: @box-color1;
+  margin-top: 10px;
+  color: #ffffff;
+
+}
+.first:hover {
+  margin-top: 0px;
+}
+
+.second {
+  height: @box-height;
+  background-color: @box-color2;
+  line-height: @box-height;
+  margin-top: 10px;
+  color: #ffffff;
+}
+.third {
+  height: @box-height;
+  color: #ffffff;
+  background-color: @box-color3;
+  line-height: @box-height;
+  margin-top: 10px;
+}
+.forth {
+  height: @box-height;
+  background-color: @box-color4;
+  line-height: @box-height;
+  margin-top: 10px;
+  color: #ffffff;
+}
+.fifth {
+  height: @box-height;
+  background-color: @box-color5;
+  line-height: @box-height;
+  margin-top: 10px;
+  color: #ffffff;
+}
+.first2 {
+  height: @box-height;
+  line-height: @box-height;
+  color: #ffffff;
+  background-color: softlight(@box-color1, #ffffff);
+  margin-top: 10px;
+}
+.second2 {
+  height: @box-height;
+  color: #ffffff;
+  background-color: softlight(@box-color2, #ffffff);
+  line-height: @box-height;
+  margin-top: 10px;
+}
+.third2 {
+  height: @box-height;
+  color: #ffffff;
+  background-color: softlight(@box-color3, #ffffff);
+  line-height: @box-height;
+  margin-top: 10px;
+}
+.forth2 {
+  height: @box-height;
+  background-color: #5cb85c;
+  line-height: @box-height;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.first1 {
+  height: @box-height;
+  line-height: @box-height;
+  color: #ffffff;
+  background-color: multiply(@box-color1, @gray-dark);
+  margin-top: 10px;
+}
+.second1 {
+  height: @box-height;
+  color: #ffffff;
+  background-color: multiply(@box-color2, @gray-dark);
+  line-height: @box-height;
+  margin-top: 10px;
+}
+.third1 {
+  height: @box-height;
+  color: #ffffff;
+  background-color: multiply(@box-color3, @gray-dark);
+  line-height: @box-height;
+  margin-top: 10px;
+ }
+.forth1 {
+  height: @box-height;
+  background-color: multiply(@box-color4, @gray-dark);
+  line-height: @box-height;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.fifth1 {
+  height: @box-height;
+  background-color: multiply(@box-color5, @gray-dark);
+  line-height: @box-height;
+  margin-top: 10px;
+  color: #ffffff;
+}
+.sixth {
+  height: @box-height;
   display: block;
-  position: relative;
-  width: 200px;
-  height: 80px;
-  background-color: #48b3f4;
+  /*#gradient.vertical(@box-color2, @box-color3);*/
+  margin-top: 10px;
+}
+.col-head-bg {
+  height: @box-height/3;
+  margin-top: @box-height/2/2;
+/*  margin-bottom: @box-height/2/2;*/
+  background-color: multiply(@box-color1, @gray-dark);
+
 }
