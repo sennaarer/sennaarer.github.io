@@ -1,19 +1,21 @@
-var app = angular.module('sennaarer.github.io', []);
+"use strict";
 
-/*
-Advent Pro
-Titillium Web
-Raleway
-Roboto Condensed
-Archivo Narrow
-Oswald
-Antic
-Questrial
-Economica
-Michroma
-Orbitron
-Marvel
-Metrophobic
-Play
+var app = angular.module("sennaarer.github.io", ["ngRoute"]);
 
- */
+
+app.config(["$routeProvider", function($routeProvider){
+    $routeProvider.
+        when("/", {
+            controller: "topCtrl"
+        }).
+        when("/:part", {
+            templateUrl:"views/part.html",
+            controller: "leftCtrl"
+
+        }).
+        when("/:part/:article", {
+            controller: "leftCtrl"
+
+        }).
+        otherwise({redirectTo: '/'});
+}]);

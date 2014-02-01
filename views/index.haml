@@ -1,0 +1,84 @@
+!!!
+%html(ng-app="sennaarer.github.io")
+  %head
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %title Home
+    %link(rel="stylesheet" href="library/css/main.css")
+    %script(src="library/js/vendor/jquery.js")
+
+  %body
+    .container
+      %nav(role="navigation" class="navbar navbar-default")
+        .navbar-header
+          %button(type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle")
+            %span(class="sr-only")
+              Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a(href="#" class="navbar-brand")
+            Brand
+
+        #navbarCollapse.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a(href="#")
+                Home
+            %li
+              %a(href="#")
+                Profile
+            %li.dropdown
+              %a(class="dropdown-toggle" data-toggle="dropdown" href="#")
+                Dropdown
+                %b.caret
+              %ul.dropdown-menu
+                %li
+                  %a(href="#")
+                    Profile
+                %li
+                  %a(href="#")
+                    Profile
+                %li
+                  %a(href="#")
+                    Profile
+
+            %li
+              %a(href="#")
+                OTHERS
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a(href="#")
+                Login
+
+
+    .container
+      .col-box
+        .col-lg-4.col-md-4.col-sm-8.col-xs-12
+          .row
+            .col-lg-6.col-md-6.col-sm-6.col-xs-6
+              .first
+
+
+        .col-lg-4.col-md-4.col-sm-8.col-xs-12
+          .first.text-center
+            HOME
+        .col-lg-4.col-md-4.col-sm-8.col-xs-12
+          .second.text-center
+            ANGULARJS
+        .col-lg-4.col-md-4.col-sm-8.col-xs-12
+          .third.text-center
+            SASS
+        .col-lg-4.col-md-4.col-sm-8.col-xs-12
+          .forth.text-center
+            HAML
+        .col-lg-4.col-md-4.col-sm-8.col-xs-12
+          .fifth.text-center
+            LESS
+
+
+
+  %script(src="library/js/vendor/angular.js" )
+  %script(src="library/js/vendor/bootstrap/collapse.js" )
+  %script(src="library/js/vendor/bootstrap/dropdown.js" )
+  %script(src="library/js/app.js" )

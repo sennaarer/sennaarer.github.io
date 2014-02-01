@@ -1,0 +1,22 @@
+<div class='col-md-4 animated'>
+  <div class='panel panel-{{color}}'>
+    <div class='panel-heading'>
+      {{filter | uppercase}}
+    </div>
+    <div class='panel-body'>
+      <div class='btn-group-vertical' style='width: 100%'>
+        <div class='btn btn-{{color}}' ng-class='clickFrom(subpart)' ng-repeat='subpart in bparts' open="open('/'+filter+'/'+subpart.path)" status='/{{filter}}/{{subpart.path}}'>
+          <div class='text-left'>{{subpart.title}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='col-lg-8'>
+  <div class='panel panel-{{color}}'>
+    <div class='panel-heading'>
+      {{filter | uppercase}}
+    </div>
+    <div class='panel-body'></div>
+  </div>
+</div>

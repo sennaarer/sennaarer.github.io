@@ -2,54 +2,31 @@
 %html(ng-app="sennaarer.github.io")
   %head
     %meta(charset="utf-8")
-    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
     %title Home
     %link(rel="stylesheet" href="library/css/main.css")
-    %script(src="library/js/vendor/jquery.js")
+    %link(rel="stylesheet" href="library/css/angular-animate.css")
 
   %body
-    .container
-      .col-head-bg
-        .col-lg-4.col-md-4.col-sm-8.col-xs-12
-          .sixth
+    .container(ng-controller="topCtrl")
+      .col-lg-2.col-md-2.col-sm-6.col-xs-12
+        .first.text-center
+          Home
+      .col-lg-2.col-md-2.col-sm-6.col-xs-12
 
-        .col-lg-4.col-md-4.col-sm-8.col-xs-12
-          .first.text-center
-            HOME
-        .col-lg-4.col-md-4.col-sm-8.col-xs-12
-          .second.text-center
-            TUTORIALS
-        .col-lg-4.col-md-4.col-sm-8.col-xs-12
-          .third.text-center
-            ABOUT
-        .col-lg-4.col-md-4.col-sm-8.col-xs-12
-          .forth.text-center
-            WORK
-        .col-lg-4.col-md-4.col-sm-8.col-xs-12
-          .fifth.text-center
-            HELP
-
-    .container
-      .col-lg-4.col-md-4.col-sm-8.col-xs-12
-        .sixth
-
-      .col-lg-4.col-md-4.col-sm-8.col-xs-12
-        .first1.text-center
-          HOME
-      .col-lg-4.col-md-4.col-sm-8.col-xs-12
-        .second1.text-center
-          TUTORIALS
-      .col-lg-4.col-md-4.col-sm-8.col-xs-12
-        .third1.text-center
-          ABOUT
-      .col-lg-4.col-md-4.col-sm-8.col-xs-12
-        .forth1.text-center
-          WORK
-      .col-lg-4.col-md-4.col-sm-8.col-xs-12
-        .fifth1.text-center
-          HELP
+      .col-lg-2.col-md-2.col-sm-6.col-xs-12(ng-repeat="part in parts | orderBy: 'title'")
+        .text-center(class="{{part.class}}" ng-click="goto('/'+part.path)")
+          {{part.title}}
+    .container.top10(ng-view)
 
 
 
-  %script(src="library/js/vendor/angular.js" )
+
+
+
+  %script(src="library/js/vendor/angular/angular.js" )
+  %script(src="library/js/vendor/angular/angular-route.js")
+  %script(src="library/js/vendor/angular/angular-animate.js")
   %script(src="library/js/app.js" )
+  %script(src="library/js/controllers.js" )
+  %script(src="library/js/services.js" )
+  %script(src="library/js/directives.js" )

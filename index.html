@@ -2,75 +2,31 @@
 <html ng-app='sennaarer.github.io'>
   <head>
     <meta charset='utf-8'>
-    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
     <title>Home</title>
     <link href='library/css/main.css' rel='stylesheet'>
-    <script src='library/js/vendor/jquery.js'></script>
+    <link href='library/css/angular-animate.css' rel='stylesheet'>
   </head>
   <body>
-    <div class='container'>
-      <div class='col-head-bg'>
-        <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-          <div class='sixth'></div>
+    <div class='container' ng-controller='topCtrl'>
+      <div class='col-lg-2 col-md-2 col-sm-6 col-xs-12'>
+        <div class='first text-center'>
+          Home
         </div>
-        <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-          <div class='first text-center'>
-            HOME
-          </div>
-        </div>
-        <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-          <div class='second text-center'>
-            TUTORIALS
-          </div>
-        </div>
-        <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-          <div class='third text-center'>
-            ABOUT
-          </div>
-        </div>
-        <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-          <div class='forth text-center'>
-            WORK
-          </div>
-        </div>
-        <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-          <div class='fifth text-center'>
-            HELP
-          </div>
+      </div>
+      <div class='col-lg-2 col-md-2 col-sm-6 col-xs-12'></div>
+      <div class='col-lg-2 col-md-2 col-sm-6 col-xs-12' ng-repeat="part in parts | orderBy: 'title'">
+        <div class='text-center {{part.class}}' ng-click="goto('/'+part.path)">
+          {{part.title}}
         </div>
       </div>
     </div>
-    <div class='container'>
-      <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-        <div class='sixth'></div>
-      </div>
-      <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-        <div class='first1 text-center'>
-          HOME
-        </div>
-      </div>
-      <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-        <div class='second1 text-center'>
-          TUTORIALS
-        </div>
-      </div>
-      <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-        <div class='third1 text-center'>
-          ABOUT
-        </div>
-      </div>
-      <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-        <div class='forth1 text-center'>
-          WORK
-        </div>
-      </div>
-      <div class='col-lg-4 col-md-4 col-sm-8 col-xs-12'>
-        <div class='fifth1 text-center'>
-          HELP
-        </div>
-      </div>
-    </div>
+    <div class='container top10' ng-view></div>
   </body>
-  <script src='library/js/vendor/angular.js'></script>
+  <script src='library/js/vendor/angular/angular.js'></script>
+  <script src='library/js/vendor/angular/angular-route.js'></script>
+  <script src='library/js/vendor/angular/angular-animate.js'></script>
   <script src='library/js/app.js'></script>
+  <script src='library/js/controllers.js'></script>
+  <script src='library/js/services.js'></script>
+  <script src='library/js/directives.js'></script>
 </html>
