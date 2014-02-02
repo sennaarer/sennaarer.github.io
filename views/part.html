@@ -5,7 +5,7 @@
     </div>
     <div class='panel-body'>
       <div class='btn-group-vertical' style='width: 100%'>
-        <div class='btn btn-{{color}}' ng-class='clickFrom(subpart)' ng-repeat='subpart in bparts' open="open('/'+filter+'/'+subpart.path)" status='/{{filter}}/{{subpart.path}}'>
+        <div class='btn btn-{{color}}' ng-class='clickFrom(subpart)' ng-click="open('/'+filter+'/'+subpart.path)" ng-repeat='subpart in bparts' status='/{{filter}}/{{subpart.path}}'>
           <div class='text-left'>{{subpart.title}}</div>
         </div>
       </div>
@@ -17,6 +17,6 @@
     <div class='panel-heading'>
       {{filter | uppercase}}
     </div>
-    <div class='panel-body'></div>
+    <div class='panel-body' ng-include="'views'+subInclude+'.html'"></div>
   </div>
 </div>

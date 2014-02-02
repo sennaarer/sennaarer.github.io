@@ -16,7 +16,7 @@
       .col-lg-2.col-md-2.col-sm-6.col-xs-12(ng-repeat="part in parts | orderBy: 'title'")
         .text-center(class="{{part.class}}" ng-click="goto('/'+part.path)")
           {{part.title}}
-    .container.top10(ng-view)
+    .container.top10(ng-view="")
 
 
 

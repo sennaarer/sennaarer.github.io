@@ -19,8 +19,7 @@ app.controller("leftCtrl", ["$scope", "base", "$routeParams", "$filter", "$locat
 
 
         $scope.open = function(path){
-            $location.path(path);
+            $scope.subInclude = path;
         };
 
     }]);
-
