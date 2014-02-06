@@ -1,19 +1,38 @@
+app.directive('dropdownToggle', ['$document', '$location', function ($document, $location) {
+    var openElement = null,
+        closeMenu   = angular.noop;
+    return {
+        restrict: 'CA',
+        link: function(scope, element, attrs) {
+            scope.$watch('$location.path', function() { closeMenu(); });
+            element.parent().bind('click', function() { closeMenu(); });
+            element.bind('click', function (event) {
 
-app.directive("status", ["$location", function($location){
-    return function(scope, element, attr){
-        element.on('click', function(e){
-            e.defaultPrevented;
-            scope.$apply(attr.open);
-            var status = attr.status;
-            var url = $location.url();
-            if(status == url){
-                element.addClass('active');
-            }
-            else {
-                element.removeClass('active');
-            }
-            this.click();
+                var elementWasOpen = (element === openElement);
 
-        });
-    }
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (!!openElement) {
+                    closeMenu();
+                }
+
+                if (!elementWasOpen && !element.hasClass('disabled') && !element.prop('disabled')) {
+                    element.parent().addClass('open');
+                    openElement = element;
+                    closeMenu = function (event) {
+                        if (event) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        $document.unbind('click', closeMenu);
+                        element.parent().removeClass('open');
+                        closeMenu = angular.noop;
+                        openElement = null;
+                    };
+                    $document.bind('click', closeMenu);
+                }
+            });
+        }
+    };
 }]);

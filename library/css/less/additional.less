@@ -2,32 +2,54 @@
   margin-top: 10px;
 }
 
-.one-box(@box-height: 60px) {
+.one-box(@box-height: 300px) {
   height: @box-height;
   line-height: @box-height;
   margin-top: @grid-gutter-width;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  font-size: 30px;
+}
+.one-box-action(@bgcolor) {
+  background-color: lighten(@bgcolor, 8%);
+  .one-box;
+  &:hover {
+    background-color: @bgcolor;
+  }
+  &:active,
+  &.selected {
+    background-color: @bgcolor;
+  }
 }
 .first {
-  background-color: @brand-warning;
-  .one-box;
+  .one-box-action(@brand-warning);
 }
-
 .second {
-  background-color: @brand-danger;
-  .one-box;
+  .one-box-action(@brand-danger);
 }
 .third {
-  background-color: @brand-info;
-  .one-box;
+  .one-box-action(@brand-info);
 }
 .forth {
-  background-color: @brand-success;
-  .one-box
+  .one-box-action(@brand-success);
 }
 .fifth {
-  background-color: @brand-primary;
-  .one-box
+  .one-box-action(@brand-primary);
 }
 
+.toggle {
+  -webkit-transition: lienear 1s;-moz-transition: lienear 1s;-ms-transition: lienear 1s;-o-transition: lienear 1s;transition: lienear 1s;
+}
+.toggle.ng-enter {
+  opacity: 0;
+}
+.toggle.ng-enter-active {
+  opacity: 1;
+}
+.toggle.ng-leave {
+  opacity: 1;
+}
+.toggle.ng-leave-active {
+  opacity: 0;
+}

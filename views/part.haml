@@ -1,15 +1,15 @@
-.col-md-4.animated
+.col-md-4
   .panel(class="panel-{{color}}")
     .panel-heading
-      {{filter | uppercase}}
+      {{part | uppercase}}
     .panel-body
       .btn-group-vertical(style="width: 100%")
-        .btn(ng-repeat="subpart in bparts" class="btn-{{color}}" ng-class="clickFrom(subpart)" ng-click="open('/'+filter+'/'+subpart.path)" status="/{{filter}}/{{subpart.path}}")
+        .btn(ng-repeat="subpart in bparts" class="btn-{{color}}" open="open('/'+part+'/'+subpart.path)" status="" )
           .text-left {{subpart.title}}
 
 .col-lg-8
   .panel(class="panel-{{color}}")
     .panel-heading
-      {{filter | uppercase}}
-    .panel-body(ng-include="'views'+subInclude+'.html'" )
+      {{part | uppercase}}
+    .panel-body(ng-include="content()")
 

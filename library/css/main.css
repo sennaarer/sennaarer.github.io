@@ -5957,42 +5957,106 @@ td.visible-print {
   margin-top: 10px;
 }
 .first {
-  background-color: #f8bf72;
-  height: 60px;
-  line-height: 60px;
+  background-color: #fad199;
+  height: 300px;
+  line-height: 300px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  font-size: 30px;
+}
+.first:hover {
+  background-color: #f8bf72;
+}
+.first:active,
+.first.selected {
+  background-color: #f8bf72;
 }
 .second {
-  background-color: #fd6480;
-  height: 60px;
-  line-height: 60px;
+  background-color: #fe8ca1;
+  height: 300px;
+  line-height: 300px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  font-size: 30px;
+}
+.second:hover {
+  background-color: #fd6480;
+}
+.second:active,
+.second.selected {
+  background-color: #fd6480;
 }
 .third {
-  background-color: #c6538c;
-  height: 60px;
-  line-height: 60px;
+  background-color: #d072a0;
+  height: 300px;
+  line-height: 300px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  font-size: 30px;
+}
+.third:hover {
+  background-color: #c6538c;
+}
+.third:active,
+.third.selected {
+  background-color: #c6538c;
 }
 .forth {
-  background-color: #5cb85c;
-  height: 60px;
-  line-height: 60px;
+  background-color: #78c478;
+  height: 300px;
+  line-height: 300px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  font-size: 30px;
+}
+.forth:hover {
+  background-color: #5cb85c;
+}
+.forth:active,
+.forth.selected {
+  background-color: #5cb85c;
 }
 .fifth {
-  background-color: #1a80be;
-  height: 60px;
-  line-height: 60px;
+  background-color: #2098e1;
+  height: 300px;
+  line-height: 300px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  font-size: 30px;
+}
+.fifth:hover {
+  background-color: #1a80be;
+}
+.fifth:active,
+.fifth.selected {
+  background-color: #1a80be;
+}
+.toggle {
+  -webkit-transition: lienear 1s;
+  -moz-transition: lienear 1s;
+  -ms-transition: lienear 1s;
+  -o-transition: lienear 1s;
+  transition: lienear 1s;
+}
+.toggle.ng-enter {
+  opacity: 0;
+}
+.toggle.ng-enter-active {
+  opacity: 1;
+}
+.toggle.ng-leave {
+  opacity: 1;
+}
+.toggle.ng-leave-active {
+  opacity: 0;
 }

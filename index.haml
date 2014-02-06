@@ -4,32 +4,25 @@
     %meta(charset="utf-8")
     %title Home
     %link(rel="stylesheet" href="library/css/main.css")
-    %link(rel="stylesheet" href="library/css/angular-animate.css")
 
   %body
-    .container(ng-controller="topCtrl")
-      .col-lg-2.col-md-2.col-sm-6.col-xs-12
-        .first.text-center
-          Home
-      .col-lg-2.col-md-2.col-sm-6.col-xs-12
-
-      .col-lg-2.col-md-2.col-sm-6.col-xs-12(ng-repeat="part in parts | orderBy: 'title'")
-        .text-center(class="{{part.class}}" ng-click="goto('/'+part.path)")
-          {{part.title}}
-    .container.top10(ng-view="")
-
+    .container(ng-controller="MyCtrl")
+      .col-md-4
+        {{ctrlhello}}
+      .col-md-4
+        {{facthello}}
+      .col-md-4
+        {{servhello}}
+      .col-md-4
+        %helloWorldFromFactory
 
 
 
 
 
-
-
-
-  %script(src="library/js/vendor/angular/angular.js" )
-  %script(src="library/js/vendor/angular/angular-route.js")
-  %script(src="library/js/vendor/angular/angular-animate.js")
-  %script(src="library/js/app.js" )
-  %script(src="library/js/controllers.js" )
-  %script(src="library/js/services.js" )
-  %script(src="library/js/directives.js" )
+    %script(src="library/js/vendor/angular/angular.js")
+    %script(src="library/js/vendor/angular/angular-route.js")
+    %script(src="library/js/app.js")
+    %script(src="library/js/controllers.js")
+    %script(src="library/js/directives.js")
+    %script(src="library/js/services.js")

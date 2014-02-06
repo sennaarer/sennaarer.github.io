@@ -8,18 +8,19 @@ app.factory("base", function () {
             path: "haml",
             class: "forth",
             color: "success",
+            info: "Here will be Information about HAML",
             subparts: [
                 {
                 title: "Haml 1",
-                path: "http://plnkr.co/edit/vWFliiEH1lJRItoxoeMk?p=preview"
+                path: "haml1"
                 },
                 {
                 title: "Haml 2",
-                path: "http://plnkr.co/edit/vWFliiEH1lJRItoxoeMk?p=preview"
+                path: "haml2"
                 },
                 {
                 title: "Haml 3",
-                path: "http://plnkr.co/edit/vWFliiEH1lJRItoxoeMk?p=preview"
+                path: "haml3"
                 }
             ]
         },
@@ -28,6 +29,7 @@ app.factory("base", function () {
             path: "sass",
             class: "third",
             color: "info",
+            info: "Here will be Information about SASS",
             subparts: [
                 {
                     title: "Sass 1",
@@ -48,6 +50,7 @@ app.factory("base", function () {
             path: "less",
             class: "fifth",
             color: "primary",
+            info: "Here will be Information about LESS",
             subparts: [
                 {
                     title: "LESS 1",
@@ -68,6 +71,7 @@ app.factory("base", function () {
             path: "angular",
             class: "second",
             color: "danger",
+            info: "Here will be Information about Angular",
             subparts: [
                 {
                     title: "Binding",
@@ -87,23 +91,3 @@ app.factory("base", function () {
     return base;
 });
 
-app.factory("angular", function () {
-    var angular = {};
-    angular = [
-                {
-                    title: "Binding",
-                    path: "binding"
-                },
-                {
-                    title: "Controllers",
-                    path: "controllers"
-                },
-                {
-                    title: "Filters",
-                    path: "filters"
-                }
-            ];
-
-
-    return angular;
-});
