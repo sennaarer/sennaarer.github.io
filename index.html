@@ -2,24 +2,24 @@
 <html ng-app='sennaarer.github.io'>
   <head>
     <meta charset='utf-8'>
-    <title>Home</title>
+    <title ng-bind='windowTitle'>Loading...</title>
     <link href='library/css/main.css' rel='stylesheet'>
   </head>
   <body>
-    <div class='container' ng-controller='MyCtrl'>
-      <div class='col-md-4'>
-        {{ctrlhello}}
+    <div class='container'>
+      <div class='col-lg-2 col-md-2 col-sm-6 col-xs-12'>
+        <div class='first text-center' ng-click='goTo()'>
+          Home
+        </div>
       </div>
-      <div class='col-md-4'>
-        {{facthello}}
-      </div>
-      <div class='col-md-4'>
-        {{servhello}}
-      </div>
-      <div class='col-md-4'>
-        <helloWorldFromFactory></helloWorldFromFactory>
+      <div class='col-lg-2 col-md-2 col-sm-6 col-xs-12'></div>
+      <div class='col-lg-2 col-md-2 col-sm-6 col-xs-12' ng-repeat='section in sections'>
+        <div class='text-center {{section.class}}' ng-click='goTo(section.id, section.name)'>
+          {{section.name}}
+        </div>
       </div>
     </div>
+    <div class='container' ng-view='windowView'></div>
     <script src='library/js/vendor/angular/angular.js'></script>
     <script src='library/js/vendor/angular/angular-route.js'></script>
     <script src='library/js/app.js'></script>

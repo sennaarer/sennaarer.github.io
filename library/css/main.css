@@ -5958,13 +5958,12 @@ td.visible-print {
 }
 .first {
   background-color: #fad199;
-  height: 300px;
-  line-height: 300px;
+  height: 60px;
+  line-height: 60px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
   cursor: pointer;
-  font-size: 30px;
 }
 .first:hover {
   background-color: #f8bf72;
@@ -5975,13 +5974,12 @@ td.visible-print {
 }
 .second {
   background-color: #fe8ca1;
-  height: 300px;
-  line-height: 300px;
+  height: 60px;
+  line-height: 60px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
   cursor: pointer;
-  font-size: 30px;
 }
 .second:hover {
   background-color: #fd6480;
@@ -5992,13 +5990,12 @@ td.visible-print {
 }
 .third {
   background-color: #d072a0;
-  height: 300px;
-  line-height: 300px;
+  height: 60px;
+  line-height: 60px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
   cursor: pointer;
-  font-size: 30px;
 }
 .third:hover {
   background-color: #c6538c;
@@ -6009,13 +6006,12 @@ td.visible-print {
 }
 .forth {
   background-color: #78c478;
-  height: 300px;
-  line-height: 300px;
+  height: 60px;
+  line-height: 60px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
   cursor: pointer;
-  font-size: 30px;
 }
 .forth:hover {
   background-color: #5cb85c;
@@ -6026,13 +6022,12 @@ td.visible-print {
 }
 .fifth {
   background-color: #2098e1;
-  height: 300px;
-  line-height: 300px;
+  height: 60px;
+  line-height: 60px;
   margin-top: 10px;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
   cursor: pointer;
-  font-size: 30px;
 }
 .fifth:hover {
   background-color: #1a80be;
@@ -6040,23 +6035,4 @@ td.visible-print {
 .fifth:active,
 .fifth.selected {
   background-color: #1a80be;
-}
-.toggle {
-  -webkit-transition: lienear 1s;
-  -moz-transition: lienear 1s;
-  -ms-transition: lienear 1s;
-  -o-transition: lienear 1s;
-  transition: lienear 1s;
-}
-.toggle.ng-enter {
-  opacity: 0;
-}
-.toggle.ng-enter-active {
-  opacity: 1;
-}
-.toggle.ng-leave {
-  opacity: 1;
-}
-.toggle.ng-leave-active {
-  opacity: 0;
 }

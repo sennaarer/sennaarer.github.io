@@ -1,0 +1,16 @@
+.container
+  .col-md-4
+    .panel(class="panel-{{color}}")
+      .panel-heading
+        {{part | uppercase}}
+      .panel-body
+        .btn-group-vertical(style="width: 100%")
+          .btn()
+            .text-left {{subpart.title}}
+
+  .col-lg-8
+    .panel(class="panel-{{color}}")
+      .panel-heading
+        {{part | uppercase}}
+      .panel-body()
+

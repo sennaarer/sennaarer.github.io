@@ -1,6 +1,83 @@
 "use strict";
 
-app.factory("base", function () {
+app.factory('setLocation', function($location) {
+    return {
+        name: function(location) {
+            if(location){
+                var loc = 'notes/'+location;
+                $location.path(loc);
+            }
+            else {
+                var home = '/';
+                $location.path(home);
+            }
+
+        }
+    };
+});
+app.factory('setTitle', function($rootScope) {
+    return {
+        name: function(title) {
+            if(title){
+                $rootScope.windowTitle = title;
+            }
+            else {
+                $rootScope.windowTitle = 'Home';
+            }
+
+        }
+    };
+});
+app.factory('setView', function($rootScope) {
+    return {
+        name: function(view) {
+                if(view){
+                    $rootScope.windowView = 'views/'+view+'/index.html';
+                }
+                else {
+                    $rootScope.windowView = 'views/views.html';
+                }
+
+        }
+    };
+});
+
+app.service("sections", function () {
+    var sections = {};
+    sections = [
+        {
+            id: "haml",
+            name: "HAML",
+            description: "HTML Abstraction Markup Language",
+            class: "forth",
+            color: "success"
+        },
+        {
+            id: "less",
+            name: "LESS",
+            description: "Less is a CSS pre-processor",
+            class: "fifth",
+            color: "primary"
+        },
+        {
+            id: "sass",
+            name: "SASS",
+            description: "Syntactically Awesome StyleSheets",
+            class: "third",
+            color: "info"
+        },
+        {
+            id: "angular",
+            name: "AngularJS",
+            description: "AngularJS is an open-source JavaScript framework",
+            class: "second",
+            color: "danger"
+        }
+    ];
+    return sections;
+});
+
+app.service("base", function () {
     var base = {};
     base = [
         {
@@ -11,16 +88,16 @@ app.factory("base", function () {
             info: "Here will be Information about HAML",
             subparts: [
                 {
-                title: "Haml 1",
-                path: "haml1"
+                    title: "Haml 1",
+                    path: "haml1"
                 },
                 {
-                title: "Haml 2",
-                path: "haml2"
+                    title: "Haml 2",
+                    path: "haml2"
                 },
                 {
-                title: "Haml 3",
-                path: "haml3"
+                    title: "Haml 3",
+                    path: "haml3"
                 }
             ]
         },
@@ -90,4 +167,3 @@ app.factory("base", function () {
     ];
     return base;
 });
-

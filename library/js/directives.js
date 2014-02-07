@@ -36,3 +36,4 @@ app.directive('dropdownToggle', ['$document', '$location', function ($document, 
         }
     };
 }]);
+

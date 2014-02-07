@@ -2,14 +2,13 @@
   margin-top: 10px;
 }
 
-.one-box(@box-height: 300px) {
+.one-box(@box-height: 60px) {
   height: @box-height;
   line-height: @box-height;
   margin-top: @grid-gutter-width;
   color: #ffffff;
   text-shadow: 1px 1px 1px #000;
   cursor: pointer;
-  font-size: 30px;
 }
 .one-box-action(@bgcolor) {
   background-color: lighten(@bgcolor, 8%);
@@ -38,18 +37,3 @@
   .one-box-action(@brand-primary);
 }
 
-.toggle {
-  -webkit-transition: lienear 1s;-moz-transition: lienear 1s;-ms-transition: lienear 1s;-o-transition: lienear 1s;transition: lienear 1s;
-}
-.toggle.ng-enter {
-  opacity: 0;
-}
-.toggle.ng-enter-active {
-  opacity: 1;
-}
-.toggle.ng-leave {
-  opacity: 1;
-}
-.toggle.ng-leave-active {
-  opacity: 0;
-}
