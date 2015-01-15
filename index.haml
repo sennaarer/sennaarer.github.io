@@ -1,30 +1,30 @@
 !!!
-%html(ng-app='sennaarer.github.io')
+%html
   %head
     %meta(charset='utf-8')
-    %title(ng-bind='windowTitle') Loading...
+    %title sennaarer.github.io
     %link(rel='stylesheet' href='library/css/main.css')
 
   %body
     .container
       .col-lg-2.col-md-2.col-sm-6.col-xs-12
-        .first.text-center(ng-click="goTo()")
+        .first.text-center
           Home
       .col-lg-2.col-md-2.col-sm-6.col-xs-12
+        .second.text-center
+          Home
 
-      .col-lg-2.col-md-2.col-sm-6.col-xs-12(ng-repeat="section in sections")
-        .text-center(class="{{section.class}}" ng-click="goTo(section.id, section.name)")
-          {{section.name}}
+      .col-lg-2.col-md-2.col-sm-6.col-xs-12
+        .third.text-center
+          Home
+      .col-lg-2.col-md-2.col-sm-6.col-xs-12
+        .forth.text-center
+          Home
+      .col-lg-2.col-md-2.col-sm-6.col-xs-12
+        .fifth.text-center
+          Home three
 
-    .container(ng-view="windowView")
+    .container
 
 
 
-
-
-    %script(src='library/js/vendor/angular/angular.js')
-    %script(src='library/js/vendor/angular/angular-route.js')
-    %script(src='library/js/app.js')
-    %script(src='library/js/controllers.js')
-    %script(src='library/js/directives.js')
-    %script(src='library/js/services.js')
