@@ -1,6 +1,82 @@
 @import "bootstrap/bootstrap";
 
-.gly-rotate-90 {
+@font-face {
+  font-family: "logo-font";
+  src:url("../font/logo-font.eot");
+  src:url("../font/logo-font.eot?#iefix") format("embedded-opentype"),
+  url("../font/logo-font.woff") format("woff"),
+  url("../font/logo-font.ttf") format("truetype"),
+  url("../font/logo-font.svg#logo-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "logo-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "logo-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-double-arrow:before {
+  content: "\e000";
+}
+.icon-phone:before {
+  content: "\e001";
+}
+.icon-world:before {
+  content: "\e002";
+}
+.icon-triangle:before {
+  content: "\e003";
+}
+.icon-google-plus:before {
+  content: "\e004";
+}
+.icon-twitter:before {
+  content: "\e005";
+}
+.icon-facebook:before {
+  content: "\e006";
+}
+.icon-world-box {
+}
+.icon-triangle-box {
+}
+.icon-phone-box {
+  display: inline-block;
+  line-height: 20px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+}
+.language {
+  font-size: 11px;
+}
+.icon-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -8,7 +84,7 @@
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.gly-rotate-180 {
+.icon-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -16,7 +92,7 @@
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.gly-rotate-270 {
+.icon-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -24,7 +100,7 @@
   -o-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-.gly-flip-horizontal {
+.icon-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -webkit-transform: scale(-1, 1);
   -moz-transform: scale(-1, 1);
@@ -32,11 +108,53 @@
   -o-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
-.gly-flip-vertical {
+.icon-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -webkit-transform: scale(1, -1);
   -moz-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   -o-transform: scale(1, -1);
   transform: scale(1, -1);
+}
+
+
+.header {
+  background-color: #005158;
+  font-family: $headings-font-family;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+}
+.header-menu {
+  cursor: pointer;
+  &:hover {
+    background-color: #006972;
+    color: #00CCDD;
+  }
+}
+/*
+Загаловок*/
+h2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h2:after {
+  display: inline-block;
+  margin: 0 0 8px 20px;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #999;
+  width: 140px;
+}
+h2:before {
+  display: inline-block;
+  margin: 0 20px 8px 0;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #999;
+  width: 140px;
 }
