@@ -13,56 +13,52 @@ html
         <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        .header
-            header.container
-                .header-top.row
-                    .col-sm-4 LOGO
-                    .col-sm-6
-                        .row
-                            .header-menu.col-sm-4 HOME
-                            .header-menu.col-sm-4 PHOTO
-                            .header-menu.col-sm-4 BLOGS
-                            .header-menu.col-sm-4 ABOUT US
-                    .col-sm-6
-                        .row
-                            .col-sm-8
-                                .row
-                                    .header-menu.col-sm-12
-                                        .row
-                                            .col-sm-4
-                                                .icon-world-box
-                                                    .icon-world
-                                            .col-sm-9
-                                                small.language UNITED KINDOM
-                                            .col-sm-3
-                                                .icon-triangle-box
-                                                    .icon-triangle
+        header
+            .container
+                .col-sm-3
+                    a.logo(href='/')
+                        img(src='lib/img/logo.svg')
+                .menu.col-sm-6
+                    .row
+                        .menu-part.col-sm-4 HOME
+                        .menu-part.col-sm-4 PHOTO
+                        .menu-part.col-sm-4 BLOGS
+                        .menu-part.col-sm-4 ABOUT US
+                .col-sm-3.menu-part
+                    .row
+                        .col-sm-3
+                            .row
+                                .icon-world
+                        .col-sm-10.small UNITED KINDOM
+                        .col-sm-3
+                            .icon-triangle
+                .col-sm-4.text-right
+                    .row
+                        a.phone-box(href='tel:55555555555')
+                            span.icon-phone.small
+                            span.phone + 5 555 555 55 55
+        nav
+            .container
+                .col-sm-2
+                .col-sm-4.nav-menu WEB-DESIGN
+                .col-sm-4.nav-menu ADVERTISING
+                .col-sm-4.nav-menu SEO
+                .col-sm-2
+        .nav-shade
 
+        section.carousel
+            .container
+                .carousel-control.carousel-left
+                    .icon-triangle
+                .carousel-control.carousel-right
+                    .icon-triangle.icon-flip-horizontal
 
-
-                                    .col-sm-4
-                            .col-sm-8.text-right
-                                .icon-phone-box
-                                    .icon-phone.small
-                                strong + 7 123 456 78 90
-        .container
-            lead.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam non, commodi facere nesciunt minus error dolor blanditiis in. Totam inventore veritatis amet nisi nostrum cupiditate voluptates veniam nesciunt iste quam.
-            mark.mark Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis voluptates praesentium quaerat, impedit totam consectetur laborum, doloribus modi dicta, recusandae consequatur molestiae aperiam eius eveniet a esse animi enim.
-            code  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore consectetur non, quod ea, repudiandae nobis ipsam iusto nam, rem expedita, dolores magnam molestias eos aliquid fuga itaque officia nulla! Quas.
-            dfn  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nihil consequuntur accusamus expedita, illo necessitatibus voluptatum sapiente architecto earum aliquid unde officiis neque exercitationem, veritatis nisi incidunt numquam laudantium eum.
-
-
-
-        h1.text-uppercase About us
-        .logo
-            .icon-logo
-            .icon-double-arrow
-            .icon-google-plus
-            .icon-call-phone
-            .icon-facebook
-            .icon-twitter
-        .logo-text abcdeghf
-        p Audax, gratis <a href="hello">adelphiss foris</a> prensionem de primus, flavum byssus.
-        a.text-primary(href="hello") Ionic cannon at the space station that is when ordinary ships harvest.
-        hr
-        footer.container footer
+        section.design
+            .container.section-name
+                h2 WEB-DESIGN
+                p <strong>Web design</strong> encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering <a href="">different aspects</a> of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves <a href="">creating mark</a> up then they are also expected to be up to date with web accessibility guidelines.
+        section.blogs
+            .container Here will be Blogs
+        section.about
+            .container Here will be About Us section
+        footer
