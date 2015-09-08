@@ -275,7 +275,14 @@ header {
   }
 }
 #toggler {
-  cursor: pointer;
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  list-style: none outside none;
+  white-space: pre;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
   }
 
 .phone {
