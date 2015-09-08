@@ -21,7 +21,11 @@
     });
     $(document).on('click','#gallery_more',function(){
         $('.design-gallery-right').removeClass('hidden-xs');
-        $(this).addClass('disabled');
+        $(this).hide();
+    });
+    $(document).on('click','#blogs_more',function(){
+        $('.blogs-box').children('.hidden-xs').removeClass('hidden-xs');
+        $(this).hide();
     });
 }(jQuery);
 
