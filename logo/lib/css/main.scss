@@ -274,7 +274,19 @@ header {
 
   }
 }
+#toggler {
+  cursor: pointer;
+  }
 
+.phone {
+  .row {
+    .menu-phone {
+      height: 50px;
+      line-height: 50px;
+      background-color: transparent;
+    }
+  }
+}
 .menu-phone {
   height: 72px;
   line-height: 72px;
