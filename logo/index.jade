@@ -22,10 +22,14 @@ html
                             img(src='lib/img/logo.svg' width="135px")
                     .menu.col-sm-6.hidden-xs
                         .row
-                            .menu-part.col-sm-4 HOME
-                            .menu-part.col-sm-4 PHOTO
-                            .menu-part.col-sm-4 BLOGS
-                            .menu-part.col-sm-4 ABOUT US
+                            .menu-part.col-sm-4.col-xs-8
+                                .container HOME
+                            .menu-part.col-sm-4.col-xs-8
+                                .container PHOTO
+                            .menu-part.col-sm-4.col-xs-8
+                                .container BLOGS
+                            .menu-part.col-sm-4.col-xs-8
+                                .container ABOUT US
                     .col-sm-3.col-xs-9
                         .row
                             .col-md-14.col-sm-16.col-xs-12.languages-box
@@ -34,12 +38,17 @@ html
                                     span.languages UNITED KINDOM
                                     span.icon-triangle
                             .col-xs-4.text-center.hidden-sm.hidden-md.hidden-lg
-                                .icon-three-bars
+                                .row
+                                    .icon-three-bars
                     .phone.col-sm-4.hidden-xs.text-right
                         .row
-                            a.phone-box(href='tel:55555555555')
-                                span.icon-phone.small
-                                span.phone + 5 555 555 55 55
+                            .menu-phone.col-xs-16
+                                .phone-box
+                                    span.icon-phone.small
+                                    span.phone + 5 555 555 55 55
+        #toggling.hidden
+            .container
+
 
 
 

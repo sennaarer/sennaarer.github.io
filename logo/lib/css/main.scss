@@ -56,6 +56,7 @@
   height: 20px;
   line-height: 20px;
   text-align: center;
+  font-size: $font-size-small;
   &:before {
     content: "\e001";
   }
@@ -101,7 +102,12 @@
   }
   @media (max-width: 420px) {
     .icon-world {
-      font-size: $font-size-small;
+      font-size: $font-size-base;
+    }
+  }
+  @media (max-width: 800px) {
+    .icon-world {
+      font-size: $font-size-base;
     }
   }
 
@@ -198,13 +204,6 @@
   transform: scale(1, -1);
 }
 
-.icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-  background-color: #fff;
-}
 
 header {
   background-color: #005158;
@@ -254,6 +253,36 @@ header {
   position: absolute;
   z-index: 3;
 }
+
+#toggling {
+  width: 100%;
+  position: absolute;
+  display: block;
+  min-height: 50px;
+  background-color: #006972;
+  z-index: 4;
+  font-family: $headings-font-family;
+  color: #fff;
+  .menu-part {
+    margin-bottom: 10px;
+    .container {
+      height: 72px;
+      line-height: 72px;
+      text-align: center;
+      background-color: #007c87;
+    }
+
+  }
+}
+
+.menu-phone {
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+  background-color: #007c87;
+}
+
+
 nav {
   height: 40px;
   background-color: #E6E6E6;
