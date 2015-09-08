@@ -1,6 +1,6 @@
 +function ($) {
     'use strict';
-    $(document).on('click', '.icon-three-bars', function () {
+    $(document).on('click', '#toggler', function () {
         var menu = $('.menu').html();
         var phone = $('.phone').html();
         if ($(this).hasClass('opened')) {
@@ -14,6 +14,10 @@
             console.log('opened')
         }
 
+    });
+    $(document).on('click','#toggling', function(){
+        $('#toggler').removeClass('opened');
+        $('#toggling').addClass('hidden').empty();
     });
 }(jQuery);
 
