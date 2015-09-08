@@ -1,6 +1,6 @@
 +function ($) {
     'use strict';
-    $(document).on('vclick click', '.icon-three-bars', function () {
+    $(document).on('click', '.icon-three-bars', function () {
         var menu = $('.menu').html();
         var phone = $('.phone').html();
         if ($(this).hasClass('opened')) {
