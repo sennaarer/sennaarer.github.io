@@ -9,6 +9,7 @@ html
         link(href='https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Fjalla+One|Homenaje' rel='stylesheet' type='text/css')
         link(rel="stylesheet" href="lib/css/main.min.css")
         script(src="lib/js/jquery.min.js")
+        script(src="lib/js/app.min.js")
     body
         <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -27,24 +28,21 @@ html
                             .menu-part.col-sm-4 ABOUT US
                     .col-sm-3.col-xs-9
                         .row
-                            .col-sm-12.col-xs-12.languages-box
+                            .col-md-14.col-sm-16.col-xs-12.languages-box
                                 .row
-                                    .col-xs-3
-                                        .row
-                                            span.icon-world
-                                    .col-xs-10
-                                        .row
-                                            span.languages UNITED KINDOM
-                                    .col-xs-3
-                                        .row
-                                            span.icon-triangle
-                            .col-sm-4.col-xs-4
-                                --
-                    .col-sm-4.hidden-xs.text-right
+                                    span.icon-world
+                                    span.languages UNITED KINDOM
+                                    span.icon-triangle
+                            .col-xs-4.text-center.hidden-sm.hidden-md.hidden-lg
+                                .icon-three-bars
+                    .phone.col-sm-4.hidden-xs.text-right
                         .row
                             a.phone-box(href='tel:55555555555')
                                 span.icon-phone.small
                                 span.phone + 5 555 555 55 55
+
+
+
         nav
             .container
                 .row

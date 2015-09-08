@@ -73,6 +73,7 @@
 }
 
 .icon-world {
+  margin-left: 8px;
   color: #00ccdd;
   display: block;
   position: relative;
@@ -93,18 +94,19 @@
     position: relative;
     font-size: $font-size-small;
   }
-  @media (max-width: $screen-xs-max) {
-    .languages {
-      font-size: $font-size-small/1.25;
+  @media (max-width: 420px) {
+    .icon-triangle {
+      font-size: smaller;
     }
   }
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: 420px) {
     .icon-world {
-      font-size: 24px;
+      font-size: $font-size-small;
     }
   }
 
   .icon-triangle {
+    margin-right: 8px;
     float: right;
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
@@ -134,6 +136,12 @@
 
 .icon-facebook:before {
   content: "\e006";
+}
+.icon-three-bars {
+  font-size: ($font-size-base*2);
+  &:before {
+  content: "\e007";
+}
 }
 
 .icon-rotate-90 {
@@ -190,6 +198,14 @@
   transform: scale(1, -1);
 }
 
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #fff;
+}
+
 header {
   background-color: #005158;
   font-family: $headings-font-family;
@@ -216,13 +232,28 @@ header {
     }
   }
 }
-
+.line-box {
+  margin: auto auto;
+}
+.line {
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+}
 .logo {
   position: relative;
   left: 0;
   bottom: -3px;
 }
-
+.menu-box {
+  width: 100%;
+  background-color: seagreen;
+  min-height: 100px;
+  position: absolute;
+  z-index: 3;
+}
 nav {
   height: 40px;
   background-color: #E6E6E6;
@@ -334,6 +365,10 @@ nav {
       margin: 0;
       padding: 0;
       li {
+        @media (max-width: $screen-xs-max) {
+          margin: 0 0 5px 0;
+        }
+
         list-style: none;
         margin: 0 5px 5px 0;
         img {
@@ -416,7 +451,7 @@ nav {
 Загаловок*/
 h2.line {
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   padding: 0;
   text-align: center;
 
