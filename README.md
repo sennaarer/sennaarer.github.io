@@ -1,4 +1,4 @@
 sennaarer.github.io
 ===================
 
-1. WELLCOM
+1. WELL COME
