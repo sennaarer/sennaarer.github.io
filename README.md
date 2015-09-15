@@ -2,7 +2,7 @@
 ## Needed for every CSS developer
 ### Fixed menu after some scroll
 http://sennaarer.gihub.io/library/fixed
-```scss
+```html
 .menu {
     height: 50px
 }
