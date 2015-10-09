@@ -1,5 +1,79 @@
-@import "bootstrap/bootstrap";
-@import "fonts/tools-shop";
-@import "fonts/roboto";
+@import "bootstrap";
+@import "tools-shop";
+@import "roboto";
 
 
+header {
+  margin-top: 20px;
+  .logo {
+    height: 110px;
+    background-color: #ffcc00;
+    text-align: center;
+    line-height: 110px;
+  }
+  .logo-text {
+    margin-top: 5px;
+    font-family: roboto_cnbold;
+    text-align: center;
+  }
+}
+.menu {
+  font-family: roboto_medium;
+  color: #252525;
+  ul {
+    margin-bottom: 5px;
+  }
+}
+.line {
+  height: 1px;
+  background-color: #d7d7d7;
+  margin-bottom: 14px;
+}
+.banner {
+  height: 70px;
+  background-color: #e2e2e2;
+}
+.warning {
+  a {
+    text-decoration: underline;
+  }
+}
+.thumbnail {
+  height: 70px;
+  img {
+    margin-top: 5px;
+  }
+}
+.phone {
+  font-size: 27px;
+  margin-bottom: 6px;
+  margin-top: 7px;
+}
+.right-menu {
+  .line {
+    margin-bottom: 5px;
+  }
+}
+.change {
+  .icon-right {
+    position: relative;
+    top: 2px;
+  }
+  .change-text {
+    border-bottom: 1px #252525 dotted;
+  }
+}
+.main-menu {
+  border-radius: 8px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #ffcc00;
+  margin: 10px 10px 0 0;
+  font-family: robotobold;
+}
+.icon-search {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 24px;
+}

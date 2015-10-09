@@ -1,25 +1,25 @@
 // Core variables and mixins
-@import "variables";
-@import "mixins";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
 // Reset and dependencies
-@import "normalize";
-@import "print";
+@import "bootstrap/normalize";
+@import "bootstrap/print";
 //@import "bootstrap/glyphicons";
 
 // Core CSS
-@import "scaffolding";
-@import "type";
-@import "code";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
 
 // Components
 //@import "bootstrap/component-animations";
 //@import "bootstrap/dropdowns";
-@import "button-groups";
+@import "bootstrap/button-groups";
 //@import "bootstrap/input-groups";
 //@import "bootstrap/navs";
 //@import "bootstrap/navbar";
@@ -29,7 +29,7 @@
 //@import "bootstrap/labels";
 //@import "bootstrap/badges";
 //@import "bootstrap/jumbotron";
-@import "thumbnails";
+@import "bootstrap/thumbnails";
 //@import "bootstrap/alerts";
 //@import "bootstrap/progress-bars";
 //@import "bootstrap/media";
@@ -46,5 +46,5 @@
 //@import "bootstrap/carousel";
 
 // Utility classes
-@import "utilities";
-@import "responsive-utilities";
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
