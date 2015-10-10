@@ -10,28 +10,28 @@
 
   &:focus,
   &.focus {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
+    color: #252525; //$color;
+    background-color: #ffcc00; //darken($background, 10%);
+    border-color: #ffcc00; //darken($border, 12%);
   }
   &:hover {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+    color: #252525; //$color;
+    background-color: #ffcc00; //darken($background, 10%);
+        border-color: #ffcc00; //darken($border, 12%);
   }
   &:active,
   &.active,
   .open > &.dropdown-toggle {
-    color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+    color: #252525; //$color;
+    background-color: #ffcc00; //darken($background, 10%);
+    border-color: #ffcc00; //darken($border, 12%);
 
     &:hover,
     &:focus,
     &.focus {
-      color: $color;
-      background-color: darken($background, 17%);
-          border-color: darken($border, 25%);
+      color: #252525; //$color;
+      background-color: #ffcc00; //darken($background, 10%);
+      border-color: #ffcc00; //darken($border, 12%);
     }
   }
   &:active,
@@ -48,8 +48,8 @@
     &.focus,
     &:active,
     &.active {
-      background-color: $background;
-          border-color: $border;
+      background-color: #252525;
+          border-color: transparent;
     }
   }
 
