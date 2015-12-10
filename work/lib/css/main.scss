@@ -2,7 +2,17 @@
 
 // Variables
 $main-color: lighten(#001F3F, 15%);
-
+// Mixins
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
 body {
   min-width: 300px;
   max-width: 1280px;
@@ -116,6 +126,8 @@ header {
 
 
 .projects {
+  @include clearfix;
+
   ul {
     padding: 0;
     display: block;
@@ -139,7 +151,6 @@ header {
         float: left;
         width: 25%;
         display: inline-block;
-        text-indent: 10px;
 
         @media screen and (max-width:768px){
           & {
@@ -149,7 +160,7 @@ header {
       }
       .project-img {
         float: left;
-        width: 25%;
+        width: 20%;
         display: inline-block;
         @media screen and (max-width:768px){
           & {
@@ -182,7 +193,58 @@ header {
 }
 
 footer {
+  background-color: #fff;
+  display: block;
+  height: 90px;
+  padding: 10px;
+  ul {
+    list-style-type: none;
+    display: block;
+    float: left;
+    padding: 0 0 0 10px;
+    li {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-header {
+    float: left;
+    display: block;
+  }
+  .footer-input {
+    float: right;
+    .input-text {
+      @media screen and (max-width:400px){
+        & {
+          width: 100px;
+        }
+      }
+      margin-top: 10px;
+      width: 200px;
+    }
+    div {
+      height: 10px;
+    }
+    .input-submit {
+      width: 206px;
+      @media screen and (max-width:400px){
+        & {
+          width: 100px;
+        }
+      }
 
+    }
+
+  }
+  .footer-menu-second, .footer-menu-third {
+    @media screen and (max-width:768px){
+      & {
+        display: none;
+      }
+    }
+
+  }
 }
 .upgrade {
   color: #fff;

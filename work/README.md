@@ -1,1 +1,1 @@
-Please run file index.html 
+Please run file index.html or open http://sennaarer.github.io/work

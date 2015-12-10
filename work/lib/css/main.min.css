@@ -441,6 +441,11 @@ header {
     max-height: 100% !important;
     display: block; }
 
+.projects:before, .projects:after {
+  content: " ";
+  display: table; }
+.projects:after {
+  clear: both; }
 .projects ul {
   padding: 0;
   display: block;
@@ -461,14 +466,13 @@ header {
       position: relative;
       float: left;
       width: 25%;
-      display: inline-block;
-      text-indent: 10px; }
+      display: inline-block; }
       @media screen and (max-width: 768px) {
         .projects ul li .project-desc {
           width: 50%; } }
     .projects ul li .project-img {
       float: left;
-      width: 25%;
+      width: 20%;
       display: inline-block; }
       @media screen and (max-width: 768px) {
         .projects ul li .project-img {
@@ -488,6 +492,40 @@ header {
         text-align: center;
         margin-bottom: 10px;
         text-decoration: none; }
+
+footer {
+  background-color: #fff;
+  display: block;
+  height: 90px;
+  padding: 10px; }
+  footer ul {
+    list-style-type: none;
+    display: block;
+    float: left;
+    padding: 0 0 0 10px; }
+    footer ul li a {
+      text-decoration: none; }
+  footer .footer-header {
+    float: left;
+    display: block; }
+  footer .footer-input {
+    float: right; }
+    footer .footer-input .input-text {
+      margin-top: 10px;
+      width: 200px; }
+      @media screen and (max-width: 400px) {
+        footer .footer-input .input-text {
+          width: 100px; } }
+    footer .footer-input div {
+      height: 10px; }
+    footer .footer-input .input-submit {
+      width: 206px; }
+      @media screen and (max-width: 400px) {
+        footer .footer-input .input-submit {
+          width: 100px; } }
+  @media screen and (max-width: 768px) {
+    footer .footer-menu-second, footer .footer-menu-third {
+      display: none; } }
 
 .upgrade {
   color: #fff; }
