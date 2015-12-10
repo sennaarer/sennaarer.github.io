@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "header": "Project 1",
+      "description1": "First describtion",
+      "description2": "Second describtion",
+      "img": "first.jpg"
+    },
+    {
+      "id": 2,
+      "header": "Project 2",
+      "description1": "First describtion",
+      "description2": "Second describtion",
+      "img": "second.jpg"
+    },
+    {
+      "id": 3,
+      "header": "Project 3",
+      "description1": "First describtion",
+      "description2": "Second describtion",
+      "img": "third.jpg"
+    }
+  ]
+}
