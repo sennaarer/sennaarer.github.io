@@ -6,13 +6,40 @@ html
         meta(http-equiv="x-ua-compatible" content="ie=edge")
         meta(name="description" content="")
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        link(href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+        //link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css')
         link(rel="stylesheet" href="css/main.min.css")
 
     body
         .video-box
             header
                 .warning
-                    span 12+
-
+                    a(href="#") 12+
+                a(href="#").logo
+                    .logo-video
+                        span VIDEO
+                    .logo-tube
+                        span Tube
+            .video
+                .video-header
+                    .title Видео HD
+                    a(href="#").share
+                    a(href="#").clock
+                .video-middle
+                    a(href="#").button
+                        span.button-left Смотреть
+                        span.button-right
+                    span.views Просмотров: 14204
+                    a(href="#").cancel Отмена
+                .video-footer
+                    .video-line
+                        .video-line-red
+                    a(href="#").play
+                    a(href="#").volume
+                    span.digit 0:01 / 15:44
+                    a(href="#").larger
+                img(src="img/video.jpg" alt="")
+            footer
+                input(type="checkbox" id="checker")
+                label(for="checker") <span class="checkbox"></span> Подтверждаю, что люблю мультики, и соглашаюсь с <a href="#">правилами предоставления услуги</a>
+                span Услуга: domainname.eu. Провайдер ООО “Эс Эм Экс Комьюникейшнс”. Стоимость: 20 руб в сутки с НДС. </span>
 
