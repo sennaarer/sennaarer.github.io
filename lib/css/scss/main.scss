@@ -34,54 +34,59 @@ $susy: (
 
 body {
   background-color: #eee;
-  .container {
-    background-color: #00a4b2;
-    @include span(24 of 24);
-    .ag1 {
-      background-color: #00b3ee;
-      @include span(4 of 24);
-    }
-    .ag2 {
-      $basic: 0 600px;
-      $large: 601px 1200px;
-
-      background-color: #00ccdd;
-      @include span(16 of 24);
-      @include clearfix;
-      .ag2-1 {
-        background-color: #2e8a56;
-        @include span(8 of 16);
-      }
-      .ag2-2 {
-        background-color: #3c763d;
-        @include span(8 at 9 of 16 last);
-      }
-      .ag2-3 {
-        background-color: #4cae4c;
-        @include span(6 of 16);
-      }
-      .ag2-4 {
-        background-color: #444444;
-        @include span(10 at 11 of 16 last);
-        @include clearfix;
-        .ag2-4-1 {
-          background-color: #555555;
-          @include span(5 of 10);
-        }
-        .ag2-4-2 {
-          background-color: #666666;
-          @include span(5 at 6 of 10);
-        }
-        .ag2-4-3 {
-          background-color: #777777;
-          clear: both;
-        }
-      }
-    }
-    .ag3 {
-      background-color: #00b3ee;
-      @include span(4 of 24 last);
-    }
-  }
 }
+.container {
+  background-color: #00a4b2;
+  @include span(24);
+}
+.ag1 {
+  background-color: #00b3ee;
+  @include span(4);
+}
+.ag2 {
+  $basic: 1px 600px;
+  $large: 601px 1200px;
 
+  background-color: #00ccdd;
+  @include span(16);
+  @include clearfix;
+}
+.ag2-1 {
+  background-color: #2e8a56;
+  @include span(8 of 16);
+}
+.ag2-2 {
+  background-color: #3c763d;
+  @include span(8 at 9 of 16 last);
+}
+.ag2-3 {
+  background-color: #4cae4c;
+  @include span(6 of 16);
+}
+.ag2-4 {
+  background-color: #444444;
+  @include span(10 at 11 of 16 last);
+  @include clearfix;
+  @include breakpoint(0 600px) {
+    & {
+      @include span(24 of 24);
+    }
+
+  };
+}
+.ag2-4-1 {
+  background-color: #555555;
+  @include span(5 of 10);
+}
+.ag2-4-2 {
+  background-color: #666666;
+  @include span(5 at 6 of 10);
+}
+.ag2-4-3 {
+  background-color: #777777;
+  clear: both;
+}
+.ag3 {
+  background-color: #00b3ee;
+  @include span(4 at 21);
+}
