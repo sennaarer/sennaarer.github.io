@@ -1,0 +1,198 @@
+doctype html
+html
+    head
+        title LOGO
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="description" content="")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="lib/css/main.min.css")
+        script(src="lib/js/jquery.min.js")
+        script(src="lib/js/app.min.js")
+    body
+        <!--[if lt IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        header
+            .container
+                .row
+                    .col-sm-3.col-xs-7
+                        a.logo(href='/')
+                            img(src='lib/img/logo.svg' width="135" alt='')
+                    .menu.col-sm-6.hidden-xs
+                        .row
+                            .menu-part.col-sm-4.col-xs-8
+                                .container HOME
+                            .menu-part.col-sm-4.col-xs-8
+                                .container PHOTO
+                            .menu-part.col-sm-4.col-xs-8
+                                .container BLOGS
+                            .menu-part.col-sm-4.col-xs-8
+                                .container ABOUT US
+                    .col-sm-3.col-xs-9
+                        .row
+                            .col-md-14.col-sm-16.col-xs-12.languages-box
+                                .row
+                                    span.icon-world
+                                    span.languages UNITED KINDOM
+                                    span.icon-triangle
+                            .col-xs-4.text-center.hidden-sm.hidden-md.hidden-lg
+                                .row
+                                    button#toggler.icon-three-bars
+                    .phone.col-sm-4.hidden-xs.text-right
+                        .row
+                            .menu-phone.col-xs-16
+                                .phone-box
+                                    span.icon-phone.small
+                                    span.phone + 5 555 555 55 55
+        #toggling.hidden
+            .container
+
+        nav
+            .container
+                .row
+                    .col-sm-2.hidden-xs
+                    .col-sm-12.col-xs-16
+                        .row
+                            .nav-menu WEB-DESIGN
+                            .nav-menu ADVERTISING
+                            .nav-menu SEO
+                    .col-sm-2.hidden-xs
+        .nav-shade
+
+        section.carousel
+            h1.hidden Carousel
+            .container
+                .carousel-control.carousel-left
+                    .icon-triangle
+                .carousel-control.carousel-right
+                    .icon-triangle.icon-flip-horizontal
+
+        section.design
+            .container.design-name
+                h2.line WEB-DESIGN
+                p <strong>Web design</strong> encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering <a href="">different aspects</a> of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves <a href="">creating mark</a> up then they are also expected to be up to date with web accessibility guidelines.
+            .container.design-gallery
+                .row
+                    .design-gallery-left
+                        ul
+                            li
+                                img(src='lib/img/l01.jpg' alt='')
+                            li
+                                img(src='lib/img/l02.jpg' alt='')
+                            li
+                                img(src='lib/img/l03.jpg' alt='')
+                    .design-gallery-right.hidden-xs
+                        ul
+                            li
+                                img(src='lib/img/r01.jpg' alt='')
+                            li
+                                img(src='lib/img/r02.jpg' alt='')
+                            li
+                                img(src='lib/img/r03.jpg' alt='')
+                    .more
+                        button#gallery_more.less.btn.btn-info.btn-lg.btn-block.hidden-sm.hidden-md.hidden-lg(type="button") MORE
+
+
+        section.blogs
+            .container
+                h2.text-center BLOGS
+            .container
+                .row.blogs-box
+                    .blog
+                        .thumbnail
+                            img(src='lib/img/b01.jpg' alt='')
+                            .caption
+                                h3 COLOURS
+                                p Encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.
+                            .blog-more
+                                .icon-double-arrow
+                    .blog
+                        .thumbnail
+                            img(src='lib/img/b02.jpg' alt='')
+                            .caption
+                                h3 FONTS
+                                p Encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.
+                            .blog-more
+                                .icon-double-arrow
+                    .blog.hidden-xs
+                        .thumbnail
+                            img(src='lib/img/b03.jpg' alt='')
+                            .caption
+                                h3 GRAPHIC
+                                p Encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.
+                            .blog-more
+                                .icon-double-arrow
+                    .blog.hidden-xs
+                        .thumbnail
+                            img(src='lib/img/b04.jpg' alt='')
+                            .caption
+                                h3 PROTOTYPING
+                                p Encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.
+                            .blog-more
+                                .icon-double-arrow
+                    .blog.hidden-xs
+                        .thumbnail
+                            img(src='lib/img/b05.jpg' alt='')
+                            .caption
+                                h3 TESTING
+                                p Encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.
+                            .blog-more
+                                .icon-double-arrow
+                    .blog.hidden-xs
+                        .thumbnail
+                            img(src='lib/img/b06.jpg' alt='')
+                            .caption
+                                h3 STARTING
+                                p Encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating mark up then they are also expected to be up to date with web accessibility guidelines.
+                            .blog-more
+                                .icon-double-arrow
+                .more
+                    button#blogs_more.less.btn.btn-info.btn-lg.btn-block.hidden-sm.hidden-md.hidden-lg(type="button") MORE
+
+
+        section.about
+            .container
+                h2.line ABOUT US
+            .container
+                .col-sm-offset-3.col-sm-10
+                    img(src='lib/img/about.jpg' alt='')
+
+
+            .container
+                p <strong>Web design</strong> encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering <a href="">different aspects</a> of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves <a href="">creating mark</a> up then they are also expected to be up to date with web accessibility guidelines.
+                p <strong>Web design</strong> encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. Often many individuals will work in teams covering <a href="">different aspects</a> of the design process, although some designers will cover them all. The term web design is normally used to describe the design process relating to the front-end (client side) design of a website including writing mark up. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves <a href="">creating mark</a> up then they are also expected to be up to date with web accessibility guidelines.
+
+        footer
+            .container.footer-top
+                .col-sm-7.hidden-xs
+                .col-sm-3.col-xs-8
+                    .row
+                        .col-sm-5.col-xs-5
+                            .icon-box
+                                .icon-facebook.icon-inside
+                        .col-sm-5.col-xs-5
+                            .icon-box
+                                .icon-twitter.icon-inside
+                        .col-sm-5.col-xs-5
+                            .icon-box
+                                .icon-google-plus.icon-inside
+                .col-sm-6.col-xs-8
+                    .icon-box.pull-right
+                        .icon-double-arrow
+            .container.footer-bottom
+                .col-xs-5.visible-xs
+                .col-sm-3.col-xs-4
+                    a.logo(href='/')
+                        img(src='lib/img/logo.svg' alt='')
+                .col-sm-6.hidden-xs
+                    .row
+                        .col-sm-4.pointer HOME
+                        .col-sm-4.pointer PHOTO
+                        .col-sm-4.pointer BLOGS
+                        .col-sm-4.pointer ABOUT US
+                .col-sm-7.text-right.hidden-xs
+                    .row
+                        a.phone-box(href='tel:55555555555')
+                            span.icon-phone.small
+                            span.phone + 5 555 555 55 55

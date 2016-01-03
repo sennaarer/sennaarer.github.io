@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "normalize";
+@import "config";
+
+.simple {
+  @include span(10 of 10);
+  background-color: blue;
+  border: 1px solid black;
+}
