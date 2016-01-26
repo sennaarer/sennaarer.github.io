@@ -7,14 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "univer.sublime-project",
-			"settings":
-			{
-				"buffer_size": 45,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -23,13 +15,117 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 87.0,
-		"last_filter": "install",
+		"height": 167.0,
+		"last_filter": "subsh",
 		"selected_items":
 		[
 			[
+				"subsh",
+				"SublimeREPL: Shell"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"Themr: List themes"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"THEM",
+				"Themr: List themes"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"inar",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"themr",
+				"Themr: List themes"
+			],
+			[
+				"th",
+				"Themr: List themes"
+			],
+			[
+				"THE",
+				"Themr: List themes"
+			],
+			[
+				"TH",
+				"Themr: List themes"
+			],
+			[
+				"t",
+				"Themr: List themes"
+			],
+			[
+				"the",
+				"Themr: List themes"
+			],
+			[
+				"sche",
+				"Schemr: List all schemes"
+			],
+			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"rmo",
+				"Package Control: Remove Package"
+			],
+			[
+				"schem",
+				"Schemr: List all schemes"
+			],
+			[
+				"themrlis",
+				"Themr: List themes"
+			],
+			[
+				"themrlist",
+				"Themr: List themes"
 			]
 		],
 		"width": 449.0
@@ -39,6 +135,9 @@
 		"height": 126.0,
 		"history":
 		[
+			"sh",
+			"dir",
+			"ls",
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"dir",
 			"ls"
@@ -55,22 +154,36 @@
 	},
 	"expanded_folders":
 	[
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/css",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/css/scss",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/css/src",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/js"
 	],
 	"file_history":
 	[
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/gulpfile.js",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/css/scss/_config.scss",
 		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/css/scss/main.scss",
-		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/config.rb",
-		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/index.jade",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/tutor/lib/css/scss/main.scss",
+		"/Users/almaz/Library/Application Support/Sublime Text 3/Packages/Seti_UI/Seti_orig.sublime-theme",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/css/main.css",
 		"/Users/almaz/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/almaz/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/css/scss/_normalize.scss",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/lib/css/main.min.css",
+		"/Users/almaz/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/index.html",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/index.jade",
+		"/Library/WebServer/Documents/Sites/sennaarer.github.io/univer/config.rb"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 94.0,
 		"where_history":
 		[
 		]
@@ -80,6 +193,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_panel",
+			"tab",
+			"block",
+			"Correct"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -97,43 +214,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "univer.sublime-project",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 45,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -170,7 +258,7 @@
 	"project": "univer.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -179,6 +267,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"lib/css/scss/_normalize.scss"
+			],
 			[
 				"main",
 				"lib/css/scss/main.scss"
@@ -197,12 +289,12 @@
 	},
 	"select_symbol":
 	{
-		"height": 0.0,
+		"height": 400.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 565.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -212,7 +304,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 183.0,
+	"side_bar_width": 260.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
