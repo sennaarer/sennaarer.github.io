@@ -1,22 +1,17 @@
 @import "tools/normalize";
 
-#geo-selector {
-  margin: 50px auto 0 auto;
-  width: 800px;
-  display: table;
-}
 
-#search-form {
+.search-form {
   display: table-cell;
   width: 400px;
   vertical-align: top;
 }
-#cities {
+.cities {
   display: table-cell;
   width: 400px;
   vertical-align: top;
 }
-#search {
+.search {
   width: 350px;
   &:focus {
     outline: 0;
