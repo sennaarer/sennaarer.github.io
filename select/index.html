@@ -8,10 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="lib/css/main.css">
     <script src="lib/js/jquery.min.js"></script>
-    <script src="lib/js/geo-selector.min.js"></script>
+    <script src="lib/js/geo-selector.js"></script>
   </head>
   <body onload="">
     <div id="geo-selector"></div>
-    <script>$('#geo-selector').geoSelector();</script>
+    <div id="geo-selector1"></div>
+    <script>
+      $('#geo-selector').geoSelector();
+      $('#geo-selector1').geoSelector(1);
+    </script>
   </body>
 </html>
