@@ -10,6 +10,8 @@
         var CityAPI = "http://evildevel.com/Test/City";
         if (region_id) {
             selectRegion(region_id);
+            selectCities(region_id)
+
         }
         $.getJSON(RegionAPI, searchRegion);
         function searchRegion(name) {
