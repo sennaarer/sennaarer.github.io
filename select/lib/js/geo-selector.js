@@ -66,17 +66,18 @@
                                 cache[query] = results;
                             }
                             if (draw == false) {
-                                //$("#search").after('<ul id="result"></ul>');
+
                                 draw = true;
                                 $(document).on("click", ".list-item", function () {
                                     var region_id = $(this).attr('region_id');
                                     var parent = $(this).parent('.result').parent('.search-form').parent('div');
-
-                                    selectCities(region_id, parent);
+                                    var result = $(this).parent('.result');
                                     var input = parent.children('div').children('input');
+
                                     input.val($(this).text());
                                     result.empty();
                                     parent.children('.cities').children('.cities_list').empty();
+                                    selectCities(region_id, parent);
                                 });
                             }
                             else {
@@ -94,8 +95,5 @@
 
                 });
         }
-
-
-
     };
 })(jQuery);
